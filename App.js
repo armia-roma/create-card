@@ -1,20 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-
+import { StyleSheet,  View } from 'react-native';
+import { useFonts } from 'expo-font';
+import Card from './src/components/Card';
+import Slider from './src/components/Slider';
+import AppScreen from './AppScreen';
+import LoginScreen from './LoginScreen';
+import TestSnipt from './TestSnipt';
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    'Inter-Black': require('./src/assets/fonts/Inter-Black.otf'),
+  });
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    // <Slider></Slider>
+    // <AppScreen />
+    <TestSnipt/>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    backgroundColor: "white"
   },
+  image: {
+    height: 200
+  }
 });
