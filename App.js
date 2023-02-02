@@ -5,6 +5,8 @@ import Slider from './src/components/Slider';
 import AppScreen from './AppScreen';
 import LoginScreen from './LoginScreen';
 import TestSnipt from './TestSnipt';
+import ImageInput from './src/components/ImageInput';
+import ImageInputScreen from './ImageInputScreen';
 export default function App() {
   const [fontsLoaded] = useFonts({
     'Inter-Black': require('./src/assets/fonts/Inter-Black.otf'),
@@ -12,7 +14,8 @@ export default function App() {
   return (
     // <Slider></Slider>
     // <AppScreen />
-    <TestSnipt/>
+    // <TestSnipt/>
+    <ImageInputScreen></ImageInputScreen>
   );
 }
 
