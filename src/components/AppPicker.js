@@ -3,19 +3,14 @@ import {useFonts} from 'expo-font';
 import {MaterialCommunityIcons} from "@expo/vector-icons"
 import { TextInput, View, StyleSheet, Text, Modal, Button, TouchableWithoutFeedback, FlatList } from 'react-native';
 import AppText from './AppText';
- const items = [
-     {name: "armia", id: 1},
-     {name: "habib", id: 2},
-     {name: "gorge", id: 3},
 
- ]
- function AppPicker({icon,onSelectItem, selectedItem, placeholder}) {
+ function AppPicker({items, icon,onSelectItem, selectedItem, placeholder}) {
     const[modalVisible, setModalVisible] = useState(false)
      return (
          <>
          <TouchableWithoutFeedback onPress={() => setModalVisible(true)} >
             <View style={styles.container}>
-                <MaterialCommunityIcons style={styles.icon}name="email"></MaterialCommunityIcons>
+                <MaterialCommunityIcons style={styles.icon}name={icon}></MaterialCommunityIcons>
                 <Text style={styles.text}>{selectedItem? selectedItem.name : placeholder}</Text>
             </View>
         </TouchableWithoutFeedback>

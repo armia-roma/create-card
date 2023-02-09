@@ -13,9 +13,10 @@ export default function App() {
   });
   return (
     // <Slider></Slider>
-    // <AppScreen />
+    <AppScreen />
     // <TestSnipt/>
-    <ImageInputScreen></ImageInputScreen>
+    // <LoginScreen/>
+    // <ImageInputScreen></ImageInputScreen>
   );
 }
 

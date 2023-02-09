@@ -12,13 +12,14 @@
     "expo": "~47.0.12",
     "expo-camera": "~13.1.0",
     "expo-font": "~11.0.1",
+    "expo-image-picker": "~14.0.2",
+    "expo-permissions": "~14.0.0",
     "expo-status-bar": "~1.4.2",
     "formik": "^2.1.4",
     "navbar-native": "^1.6.1",
     "react": "18.1.0",
     "react-native": "0.70.5",
-    "expo-image-picker": "~14.0.2",
-    "expo-permissions": "~14.0.0"
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
